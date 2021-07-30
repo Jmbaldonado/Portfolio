@@ -1,0 +1,153 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+/* Colors
+    primary - #25274d
+    primary-light - #464866
+    neutral - #aaabb8
+    accent-light - #2e9cca
+    accent - #29648a
+*/
+
+.primary {
+    color: #25274d;
+}
+
+.primary-light {
+    color: #464866;
+}
+
+.neutral {
+    color: #aaabb8;
+}
+
+.accent-light {
+    color: #2e9cca;
+}
+
+.accent {
+    color: #29648a;
+}
+
+.bg-custom-primary {
+    background-color: #25274d;
+    color: #fff!important;
+}
+#home {
+    padding-top: 5rem;
+}
+
+.btn-custom {
+   background-color: #2e9cca;
+    color: #fff;
+}
+
+.btn-custom:hover {
+    background-color: #29648a;
+    color: #fff;
+}
+.developer-image {
+    width: 65%;
+}
+
+
+.btn-rounded {
+    border-radius: 20px;
+}
+.text-custom {
+    color: #17252A;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+
+    .card-body {
+        height: 420px;
+    }
+    .card__description {
+        font-size: 1.1rem;
+    }
+}
+/*===================== Progress Bar ====================*/
+
+.progress {
+    border-radius: 10px;
+  }
+  
+  .progress .progress-bar {
+    width: 0px;
+    border-radius: 10px;
+    transition: 2s;
+  }
+
+   
+.scroll {
+    display: none;
+    position: fixed;
+    right:10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 1040;
+}
+
+.scroll:active {
+    background-color: #212529;
+}
+
+.btnFade-in {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: FadeIn;
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.btnFade-out {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: FadeOut;
+}
+
+@keyframes FadeOut {
+    from {
+        opacity: 1;
+    }
+    
+    to {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+}
